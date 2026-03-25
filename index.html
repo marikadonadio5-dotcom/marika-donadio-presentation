@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Presentation - Silvae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="technical_presentation.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header class="topbar container-fluid justify-content-end">
+        <nav class="quick-nav">
+          <a href="#slide-1">1</a>
+          <a href="#slide-2">2</a>
+          <a href="#slide-3">3</a>
+          <a href="#slide-4">4</a>
+          <a href="#slide-5">5</a>
+          <a href="#slide-6">6</a>
+          <a href="#slide-7">7</a>
+          <a href="#slide-8">8</a>
+        </nav>
+    </header>
+  
+    <main class="slides" aria-label="Horizontal presentation">
+      <section id="slide-1" class="slide intro">
+        <div class="text-block">
+          <span class="section-tag">Technical Analysis</span>
+          <h1>Silvae<br><span>website architecture</span></h1>
+          <p class="lead">An overview of the website's main architectural components: first-scroll structure, sticky navigation bar, product card, visual grid, and final conversion CTA.</p>
+          <ul>
+            <li>Visual consistency with the original palette and fonts</li>
+            <li>Premium experience with a responsive layout</li>
+            <li>Lightweight interactions</li>
+          </ul>
+        </div>
+        <div class="media-block img-fluid">
+          <img src="images/first_scroll.png" alt="Silvae first-scroll preview">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost disabled" href="#slide-1" aria-disabled="true">Back</a>
+          <a class="btn primary" href="#slide-2">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-2" class="slide">
+        <div class="text-block">
+          <span class="section-tag">First Scroll</span>
+          <h2>Two-column hero layout</h2>
+          <p>The first viewport uses a 1fr / 1fr composition: editorial content and CTAs on the left, featured product on the right. Visual hierarchy and contrast guide reading immediately.</p>
+          <ul>
+            <li>Full-height section with immediate impact</li>
+            <li>Display typography for headline and key metrics</li>
+            <li>Clear separation between primary and secondary CTAs</li>
+          </ul>
+        </div>
+        <div class="media-block img-fluid">
+          <img class="" src="images/first_scroll.png" alt="First-scroll layout">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-1">Back</a>
+          <a class="btn primary" href="#slide-3">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-3" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Navigation Pattern</span>
+          <h2>Sticky navbar with blur</h2>
+          <p>The navigation remains fixed at the top and uses a semi-transparent blurred background. This preserves orientation and section access during scrolling without breaking context.</p>
+          <ul>
+            <li>Fixed positioning for constant accessibility</li>
+            <li>Improved readability on variable backgrounds</li>
+            <li>Highlighted call-to-action in the menu</li>
+          </ul>
+          <div class="media-block narrow  img-fluid">
+            <img src="images/sticky_navbar.png" alt="Sticky navbar detail">
+          </div>
+        </div>
+        <!-- DA CANCELLARE -->
+        <!-- <div class="media-block narrow img-fluid">
+          <img src="images/sticky_navbar.png" alt="Sticky navbar detail">
+        </div> -->
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-2">Back</a>
+          <a class="btn primary" href="#slide-4">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-4" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Component Design</span>
+          <h2>Modular product card</h2>
+          <p>The card combines image, product attributes, and pricing in one reusable block. The micro-interaction system strengthens premium perception without overloading the UI.</p>
+          <ul>
+            <li>Block structure (tag, description, details, footer)</li>
+            <li>CSS hover animations (lift and scale)</li>
+            <li>High contrast for readability and focus</li>
+          </ul>
+        </div>
+        <div class="media-block ">
+          <img src="images/product_card.png" alt="Product card detail">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-3">Back</a>
+          <a class="btn primary" href="#slide-5">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-5" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Grid System</span>
+          <h2>Responsive grid layout</h2>
+          <p>Main sections use CSS Grid to distribute informational and visual content. The design shifts to a single column at smaller breakpoints while preserving narrative clarity.</p>
+          <ul>
+            <li>Desktop grid balances text and imagery</li>
+            <li>Mobile adaptation prioritizes content flow</li>
+            <li>Spacing controlled through global variables</li>
+          </ul>
+        </div>
+        <div class="media-block">
+          <img src="images/grid_layout.png" alt="Website grid layout scheme">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-4">Back</a>
+          <a class="btn primary" href="#slide-6">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-6" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Visual Layer</span>
+          <h2>Background pattern and depth</h2>
+          <p>Radial gradients and an SVG overlay pattern add depth without heavy hero images. The result is an elegant texture aligned with the brand's tone.</p>
+          <ul>
+            <li>CSS layering with multiple gradients</li>
+            <li>Lightweight inline vector pattern</li>
+            <li>Fine control of opacity and contrast</li>
+          </ul>
+        </div>
+        <div class="media-block ">
+          <img src="images/background_pattern.png" alt="Background graphic pattern example">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-5">Back</a>
+          <a class="btn primary" href="#slide-7">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-7" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Data Visualization</span>
+          <h2>Ingredient progress bars</h2>
+          <p>Formula percentages are rendered with CSS bars and custom properties (`--progress`). This approach cleanly separates content and presentation while keeping markup simple.</p>
+          <ul>
+            <li>CSS variables for fast configuration</li>
+            <li>Width animation for visual feedback</li>
+            <li>Easily reusable pattern across sections</li>
+          </ul>
+        </div>
+        <div class=" d-flex justify-content-center align-items-center gap-3">
+          <img class="medias" src="images/progress.png" alt="Progress bars in the layout">
+          <img class="medias" src="images/progress_in_CSS.png" alt="CSS implementation of progress bars">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-6">Back</a>
+          <a class="btn primary" href="#slide-8">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-8" class="slide outro">
+        <div class="text-block">
+          <span class="section-tag">Conversion Focus</span>
+          <h2>Waitlist and code identification</h2>
+          <p>The funnel ends with a simple email form and immediate call to action. The project identification block (`code_id`) supports traceability and technical coherence.</p>
+          <ul>
+            <li>Final call-to-action focused on conversion</li>
+            <li>Minimal form to reduce friction</li>
+            <li>Narrative closure of the user journey</li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <img class="medias-negative" src="images/waitlist.png" alt="Final waitlist section">
+          <img class="medias-negative" src="images/code_id.png" alt="Code ID identifying element">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-7">Back</a>
+          <a class="btn primary" href="#slide-1">Restart</a>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
